@@ -5,12 +5,12 @@ colors:
 
   normal:
     black:   '#262626'
-    red:     '#da3131'
-    green:   '#67ca67'
-    yellow:  '#d2d211'
-    blue:    '#4242aa'
-    magenta: '#aa42aa'
-    cyan:    '#539ad2'
+    red:     '#bc6a6a'
+    green:   '#6abc6a'
+    yellow:  '#bcbc6a'
+    blue:    '#6a6abc'
+    magenta: '#bc6abc'
+    cyan:    '#53adad'
     white:   '#f0f0f0'
     orange:  '#c6a679' #Here for reference
 
