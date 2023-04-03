@@ -36,6 +36,10 @@ super + Escape
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
+# quit the fuck startx
+super + ctrl + shift + q + a
+	killall xinit
+
 # close and kill
 super + {_,shift + }q
 	bspc node -{c,k}
@@ -162,7 +166,7 @@ XF86MonBrightnessDown
 
 # Screenshot
 Print
-  scrot "$(xdg-user-dir PICTURES)/screenshot-$(date +%F_%T).png"
+  scrot "$~/screenshots/screenshot-$(date +%F_%T).png"
 
 super + Print
   ~/.config/bspwm/scripts/screenshot.sh

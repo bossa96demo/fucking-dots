@@ -1,0 +1,1 @@
+xorg bspwm sxhkd alacritty nerd-fonts-ttf zsh rofi
