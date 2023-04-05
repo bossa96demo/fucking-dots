@@ -160,10 +160,9 @@ Print
 super + Print
   ~/.config/bspwm/scripts/screenshot.sh
 
-
 #change LANGUAGE
 alt + shift + c
-  ~/.config/lang.sh
+  ~/.config/bspwm/scripts/lang.sh
 
 # MUSIC
 #pause/play music
@@ -177,6 +176,3 @@ super + shift + n
 #play next song
 super + shift + m
   playerctl next
-
-super + F1
-  ~/.config/bspwm/scripts/keybindings_rofi.sh
