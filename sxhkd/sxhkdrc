@@ -12,24 +12,13 @@ super + d
                 -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
                 -font "Droid Sans Regular 10"
 
-# show open window
-super + ctrl + d
-	rofi -modi drun -show window -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
-                -font "Droid Sans Regular 10"
 
-# show ssh sesssions
-super + shift + d
-	rofi -modi drun -show ssh -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
-                -show-icons -drun-icon-theme "Qogir-dark" -font "Droid Sans Regular 10"
-
-# make sxhkd reload its configuration files:
+# make SXHKD reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
 #
-# bspwm hotkeys
+# BSPWM hotkeys
 #
 
 # quit/restart bspwm
@@ -137,8 +126,11 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+
 #
-# Special hotkeys
+# SPECIAL HOTKEYS
 #
 
 # Multimedia keys
@@ -153,9 +145,6 @@ XF86AudioLowerVolume
 XF86AudioMute
   amixer -D pulse sset Master toggle-mute
   
-# amixer -q set Master toggle
-# Simple amixer command seems to have problems unmuting device
-
 # Brightness up
 XF86MonBrightnessUp
   xbacklight -inc 5
@@ -171,11 +160,12 @@ Print
 super + Print
   ~/.config/bspwm/scripts/screenshot.sh
 
-# Shortcuts
-super + w 
-  firefox
 
+#change LANGUAGE
+alt + shift + c
+  ~/.config/lang.sh
 
+# MUSIC
 #pause/play music
 super + shift + space
   playerctl play-pause

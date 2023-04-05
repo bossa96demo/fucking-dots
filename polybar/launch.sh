@@ -7,8 +7,8 @@ killall polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch polybar
-polybar time -c $HOME/.config/polybar/fail/config.ini &
-polybar workspaces -c $HOME/.config/polybar/fail/config.ini &
+polybar time -c $HOME/.config/polybar/config.ini &
+polybar workspaces -c $HOME/.config/polybar/config.ini &
 
 if [[ $(xrandr -q | grep 'HDMI1 connected') ]]; then
 	polybar external -c $(dirname $0)/config.ini &
