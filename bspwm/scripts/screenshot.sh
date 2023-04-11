@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # options to be displayed
-option0='screen'
+option0='whole screen'
 option1='select area or window'
 option2='currently focused window'
 options="$option0\n$option1\n$option2"
 
 # save file
-file="$(xdg-user-dir PICTURES)/screenshot-$(date +%F_%T).png"
+file="$(xdg-user-dir)/screenshot-$(date +%F_%T).png"
 
 selected="$(echo -e "$options" | rofi -lines 3 -dmenu -p 'scrot')"
 case $selected in

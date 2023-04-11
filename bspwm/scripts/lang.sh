@@ -1,6 +1,6 @@
-lang=$(setxkbmap -query | grep layout | cut -d ":" -f 2)
+lang=$(setxkbmap -query | grep layout | tail -c 3)
 
-if [ "$lang" == "     us" ]; then
+if [ "$lang" == "us" ]; then
 	setxkbmap ru
 else
 	setxkbmap us

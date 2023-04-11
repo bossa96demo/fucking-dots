@@ -4,23 +4,23 @@ colors:
     foreground: '#f0f0f0'
 
   normal:
+    red:     '#c17d7d'
+    green:   '#7dc17d'
+    blue:    '#7d7dc1'
+    yellow:  '#c1c17d'
+    magenta: '#c17dc1'
+    cyan:    '#7dc1c1'
     black:   '#262626'
-    red:     '#bc6a6a'
-    green:   '#6abc6a'
-    yellow:  '#bcbc6a'
-    blue:    '#6a6abc'
-    magenta: '#bc6abc'
-    cyan:    '#53adad'
     white:   '#f0f0f0'
     orange:  '#c6a679' #Here for reference
 
   bright:
+    red:     '#d45a5a'
+    green:   '#5ad45a'
+    blue:    '#5a5ad4'
+    yellow:  '#d4d45a'
+    magenta: '#d45ad4'
+    cyan:    '#5ad4d4'
     black:   '#4c4c4c'
-    red:     '#ff0000'
-    green:   '#00ff00'
-    yellow:  '#ffff00'
-    blue:    '#0000ff'
-    magenta: '#ff00ff'
-    cyan:    '#00ffff'
     white:   '#f0f0f0'
     orange:  '#ceb188' #Here for reference

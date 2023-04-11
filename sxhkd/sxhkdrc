@@ -8,10 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	rofi -modi drun -show drun -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
-                -font "Droid Sans Regular 10"
-
+	rofi -modi drun -show drun -hide-scrollbar
 
 # make SXHKD reload its configuration files:
 super + Escape
@@ -25,9 +22,9 @@ super + Escape
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# quit the fuck startx
-super + ctrl + shift + q + a
-	killall xinit
+# quit startx if you failed your setup
+ctrl + alt + q + x
+	pkill xinit
 
 # close and kill
 super + {_,shift + }q
@@ -127,21 +124,27 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+# expand/contract a window 
+alt + ctrl + shift + {h,j,k,l}
+ 	 bspc node -z {left -20 0 || bspc node -z right -20 0, \
+                	bottom 0 20 || bspc node -z top 0 20,\
+                	top 0 -20 || bspc node -z bottom 0 -20,\
+                	right 20 0 || bspc node -z left 20 0}
 
 
 #
 # SPECIAL HOTKEYS
 #
 
-# Multimedia keys
+# Increase volume
 XF86AudioRaiseVolume
   amixer -q set Master 5%+ unmute
 
-# Still multimedia
+# Decrease volume
 XF86AudioLowerVolume
   amixer -q set Master 5%- unmute
 
-# still
+# Mute
 XF86AudioMute
   amixer -D pulse sset Master toggle-mute
   
@@ -155,24 +158,26 @@ XF86MonBrightnessDown
 
 # Screenshot
 Print
-  scrot "$~/screenshots/screenshot-$(date +%F_%T).png"
+  scrot "$(xdg-user-dir)/screenshot-$(date +%F_%T).png"
 
+# More flexible screenshot
 super + Print
   ~/.config/bspwm/scripts/screenshot.sh
 
+
 #change LANGUAGE
-alt + shift + c
+ctrl + l
   ~/.config/bspwm/scripts/lang.sh
 
 # MUSIC
 #pause/play music
-super + shift + space
+alt + space
   playerctl play-pause
 
 #play prev song
-super + shift + n 
+alt + n 
   playerctl previous
 
 #play next song
-super + shift + m
+alt + m
   playerctl next

@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=4242
-SAVEHIST=4242
+HISTFILE=~/.zsh-hist
+HISTSIZE=10000
+SAVEHIST=10000
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/ilya/.zshrc'
@@ -43,6 +43,7 @@ alias lh='ls -hl' 	  # human-readable long ls
 alias cmt='git commit'	  # commit
 alias ada='git add -A'	  # adds all file to commit
 alias psh='git push'	  # push
+alias fih='cat ~/.zsh-hist | grep' # Find In History - fih
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
