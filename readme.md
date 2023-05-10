@@ -1,5 +1,7 @@
 # fucking-dots
-Steps to install: 
+Steps to install:
+0. `mkdir ~/.config`
+In case config folder doesn't exist, 1-st step will give you error.
 1. `cp -r * ~/.config`
 This will copy every file from this repo to your config folder
 2. `cp .*rc ~`
