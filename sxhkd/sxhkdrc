@@ -125,7 +125,7 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # expand/contract a window 
-alt + ctrl + shift + {h,j,k,l}
+ctrl + {h,j,k,l}
  	 bspc node -z {left -20 0 || bspc node -z right -20 0, \
                 	bottom 0 20 || bspc node -z top 0 20,\
                 	top 0 -20 || bspc node -z bottom 0 -20,\
@@ -158,26 +158,30 @@ XF86MonBrightnessDown
 
 # Screenshot
 Print
-  scrot "$(xdg-user-dir)/screenshot-$(date +%F_%T).png"
+  scrot "$(xdg-user-dir)/screenshot-s/screenshot-$(date +%F_%T).png"
 
 # More flexible screenshot
 super + Print
   ~/.config/bspwm/scripts/screenshot.sh
 
+# Duplicate current window
+alt + d
+  ~/.config/bspwm/scripts/dup.sh
 
-#change LANGUAGE
-ctrl + l
+# Change LANGUAGE
+ctrl + p
   ~/.config/bspwm/scripts/lang.sh
 
 # MUSIC
-#pause/play music
+
+# pause/play music
 alt + space
   playerctl play-pause
 
-#play prev song
+# Play prev song
 alt + n 
   playerctl previous
 
-#play next song
+# Play next song
 alt + m
   playerctl next

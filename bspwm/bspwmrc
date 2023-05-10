@@ -39,10 +39,14 @@ xrandr -s 1920x1080 &
 # Bar
 pkill polybar
 polybar left &
-polybar middle &
 polybar right &
+polybar middle &
 # Wallpaper
 feh --bg-scale ~/.config/wallpapers/wallpaper.png &
 
 # Cursor
 xsetroot -cursor_name left_ptr &
+
+# Clipboard
+pkill clipit
+clipit &

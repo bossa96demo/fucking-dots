@@ -7,8 +7,8 @@ option2='currently focused window'
 options="$option0\n$option1\n$option2"
 
 # save file
-file="$(xdg-user-dir)/screenshot-$(date +%F_%T).png"
-
+photo="screenshot-$(date +%F_%T).png"
+file="$(xdg-user-dir)/screenshot-s/$photo"
 selected="$(echo -e "$options" | rofi -lines 3 -dmenu -p 'scrot')"
 case $selected in
   "$option0")
@@ -18,3 +18,4 @@ case $selected in
   "$option2")
     sleep 1 && scrot -u -F "$file";;
 esac
+cat $file | xclip -selection clipboard -target image/png -i
