@@ -1,1 +1,1 @@
-xorg bspwm sxhkd alacritty nerd-fonts-ttf zsh rofi zsh-syntax-highlighting zsh-autosuggestions feh polybar playerctl
+xorg bspwm sxhkd alacritty nerd-fonts-ttf zsh rofi feh polybar playerctl
