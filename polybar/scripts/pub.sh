@@ -1,8 +1,9 @@
-ip=$(host myip.opendns.com resolver1.opendns.com | grep myip | cut -d " " -f 4)
-sec=$(curl -s ipinfo.io | jq ".country" | cut -d '"' -f 2)
-if [ "$sec" == "RU" ];then
-    printf "%%{F#A90015} ";
+abob=$(curl -s ipinfo.io?token=$token)
+ip=$(echo $abob | jq ".ip" | tr -d '"')
+country=$(echo $abob | jq ".country" | tr -d '"')
+if [ "$country" == "RU" ];then
+    printf "%%{F#D45A5A} ";
 else
-    printf "%%{F#15A900} ";
+    printf "%%{F#5AD45A} ";
 fi
-echo "$ip $sec"
+echo "$ip $country"
