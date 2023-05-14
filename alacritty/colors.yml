@@ -1,7 +1,7 @@
 colors:
   primary:
     background: '#170f0d'
-    foreground: '#746c48'
+    foreground: '#857d59'
 
   normal:
     red:     '#98724c'
