@@ -4,6 +4,10 @@ end
 function fish_prompt
 	echo -n -s (set_color cyan)"["(prompt_pwd)"]" (set_color normal)" \$ "
 end
+function fish_right_prompt
+	echo "took $CMD_DURATION ms"
+end
+
 function fish_greeting
 	set abob (whoami)
 	echo "hello, $abob"
@@ -15,10 +19,10 @@ end
 
 # ls-s
 function li # ls with adress
-	ls -i $argv
+	ls -i
 end
-function du # show storage used by file 
-	du -h $argv
+function lh # show storage used by file 
+	ls -lh $argv | cut -d " " -f 5
 end
 # git-s
 function cmt
