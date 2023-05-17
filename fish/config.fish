@@ -31,6 +31,9 @@ end
 function ada
 	git add -A
 end
+function add
+	git add $argv
+end
 function psh
 	git push
 end
