@@ -4,3 +4,4 @@ cp -r ~/.config/bspwm/ ~/gth-s/fucking-dots/
 cp -r ~/.config/sxhkd/ ~/gth-s/fucking-dots/
 cp -r ~/.config/polybar/ ~/gth-s/fucking-dots/
 cp -r ~/.config/rofi/ ~/gth-s/fucking-dots/
+cp ~/.xinitrc ~/gth-s/fucking-dots/
