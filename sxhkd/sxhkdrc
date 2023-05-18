@@ -158,9 +158,9 @@ XF86MonBrightnessDown
 
 # Screenshot
 Print
-  scrot "$(xdg-user-dir)/screenshot-s/screenshot-$(date +%F_%T).png"
+  maim > "$(xdg-user-dir)/screenshot-s/screenshot-$(date +%F_%T).png"
 
-# More flexible screenshot
+# Select area to screenshot
 super + Print
   ~/.config/bspwm/scripts/screenshot.sh
 
