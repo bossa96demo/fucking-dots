@@ -1,26 +1,26 @@
 colors:
   primary:
-    background: '#000000'
-    foreground: '#aaaaaa'
+    background: '#170f0d'
+    foreground: '#746c48'
 
   normal:
     red:     '#a0724c'
-    green:   '#547851'
-    blue:    '#426a6a'
+    green:   '#7b964e'
+    blue:    '#3a4e4e'
     yellow:  '#908f32'
     magenta: '#6b5644'
     cyan:    '#648b8b'
     black:   '#262626'
-    white:   '#f0f0f0'
+    white:   '#aaaaaa'
     orange:  '#af5f00' #Here for reference
 
   bright:
     red:     '#a0724c'
-    green:   '#547851'
-    blue:    '#426a6a'
+    green:   '#7b964e'
+    blue:    '#3a4e4e'
     yellow:  '#908f32'
     magenta: '#6b5644'
     cyan:    '#648b8b'
     black:   '#262626'
-    white:   '#f0f0f0'
+    white:   '#aaaaaa'
     orange:  '#af5f00' #Here for reference
