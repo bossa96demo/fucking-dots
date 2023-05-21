@@ -1,6 +1,6 @@
 #! /bin/sh
 
-#pgrep -x sxhkd > /dev/null || sxhkd &
+# pgrep -x sxhkd > /dev/null || sxhkd &
 # prep -x flag means: matches eXact patter, in this case eXactly sxhkd
 # we write the output to /dev/null because we don't need it
 # if pgrep was unsuccesful then thing after || will be executed
