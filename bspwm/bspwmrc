@@ -42,7 +42,7 @@ polybar left &
 polybar right &
 polybar middle &
 # Wallpaper
-feh --bg-scale ~/.config/wallpapers/wallpaper.png &
+feh --bg-scale ~/.config/wallpapers/street.jpg &
 
 # Cursor
 xsetroot -cursor_name left_ptr &

@@ -54,14 +54,3 @@ end
 function bus # my friend asked for bus as command 
 	gcc -lncurses $argv && ./a.out
 end
-function kek
-	gcc -lcurl $argv && ./a.out
-end
-
-# IntelliShell
-set -gx INTELLI_HOME /home/ilya/.local/share/intelli-shell
-# set -gx INTELLI_SEARCH_HOTKEY \cr
-# set -gx INTELLI_LABEL_HOTKEY \cl
-# set -gx INTELLI_BOOKMARK_HOTKEY \cb
-# set -gx INTELLI_SKIP_ESC_BIND 0
-source "$INTELLI_HOME/bin/intelli-shell.fish"
