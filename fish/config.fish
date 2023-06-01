@@ -21,9 +21,6 @@ end
 function li # ls with adress
 	ls -i
 end
-function lh # show storage used by file 
-	ls -lh $argv | cut -d " " -f 5
-end
 # git-s
 function cmt
 	git commit -m "$argv"
@@ -54,8 +51,17 @@ function car # Compile And Run -  car
 	gcc $argv && ./a.out
 end
 
-# fun
-function 西瓜
-	yes "西瓜/watermelon/арбуз/󱁇"
+function bus # my friend asked for bus as command 
+	gcc -lncurses $argv && ./a.out
+end
+function kek
+	gcc -lcurl $argv && ./a.out
 end
 
+# IntelliShell
+set -gx INTELLI_HOME /home/ilya/.local/share/intelli-shell
+# set -gx INTELLI_SEARCH_HOTKEY \cr
+# set -gx INTELLI_LABEL_HOTKEY \cl
+# set -gx INTELLI_BOOKMARK_HOTKEY \cb
+# set -gx INTELLI_SKIP_ESC_BIND 0
+source "$INTELLI_HOME/bin/intelli-shell.fish"
