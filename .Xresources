@@ -1,0 +1,49 @@
+!
+! COLORS
+!
+
+
+! Primary
+xterm*background: #170f0d
+xterm*foreground: #746c48
+
+! Normal
+
+!black
+XTerm*color0: #262626 
+!red
+XTerm*color1: #a0724c
+!green
+XTerm*color2: #7b964e
+!yellow
+XTerm*color3: #908f32
+!blue
+XTerm*color4: #3a4e4e
+!magenta
+XTerm*color5: #6b5644
+!cyan
+XTerm*color6: #648b8b
+!white
+XTerm*color7: #aaaaaa
+
+! Bright
+
+!black
+XTerm*color8: #262626 
+!red
+XTerm*color9: #a0724c
+!green
+XTerm*color10: #7b964e
+!yellow
+XTerm*color11: #908f32
+!blue
+XTerm*color12: #3a4e4e
+!magenta
+XTerm*color13: #6b5644
+!cyan
+XTerm*color14: #648b8b
+!white
+XTerm*color15: #aaaaaa
+
+!xterm*font: JetBrainsMono
+
