@@ -1,7 +1,8 @@
 # Dots
 
 ### Screenshots
-![screenshot, lol](screenshot.png)
+![screenshot, lol](./screen.png)
+![another one](./screenshot.png)
 
 ### Installation guide:
 1. `mkdir ~/.config`
