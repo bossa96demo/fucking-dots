@@ -158,7 +158,7 @@ XF86MonBrightnessDown
 
 # Screenshot
 Print
-  maim > "$(xdg-user-dir)/screenshot-s/screenshot-$(date +%F_%T).png"
+  maim -u > "$(xdg-user-dir)/screenshot-s/screenshot-$(date +%F_%T).png"
 
 # Select area to screenshot
 super + Print
